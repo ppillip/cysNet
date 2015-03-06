@@ -144,7 +144,7 @@ cysBatch.CYear = function(yyyy){
 };
 
 
-//센터코드 구하기
+//센터코드 구하기.
 cysBatch.getCCode = function(){
 
     var RCode = [];
