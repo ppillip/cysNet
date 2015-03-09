@@ -4,8 +4,9 @@
 cysBatch = {};
 
 cysBatch.gogo = function(){
-    cysBatch.goYear();
-    cysBatch.goMonth();
+    //cysBatch.goYear();
+    //cysBatch.goMonth();
+    cysBatch.goWeek();
     cysBatch.goDay();
 };
 
@@ -36,7 +37,7 @@ cysBatch.goMonth = function(){
 
 cysBatch.goWeek = function(){
 
-    _.each(['2013','2014'],function(yy){
+    _.each(['2014'],function(yy){
 
         _.each(utl.mm(),function(mm){
 
@@ -60,7 +61,8 @@ cysBatch.goDay = function(){
 
             _.each(utl.dd(mm),function(dd){
 
-                cysBatch.RDay(yy+mm+dd);
+                cysBatch.CDay(yy+mm+dd);
+
 
             });
 
@@ -80,7 +82,8 @@ cysBatch.goHour = function(){
 
                 _.each(utl.sRange(0,24,1,'00'),function(hh){
 
-                    console.log(yy+mm+dd+hh);
+                    cysBatch.RHour(yy+mm+dd+hh);
+                    cysBatch.CHour(yy+mm+dd+hh);
 
                 });
 
@@ -94,6 +97,7 @@ cysBatch.goHour = function(){
 
 
 //지역별 시간
+//db.TEST_R_HOUR.ensureIndex({dt:1});
 cysBatch.RHour = function(ymdh){
 
     console.log('RHour',{dt : ymdh},'삭제');

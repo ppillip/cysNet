@@ -1,5 +1,6 @@
 
 //지역별 시간임
+//db.TEST_C_HOUR.ensureIndex({dt:1});
 cysBatch.CHour = function(ymdh){
 
     console.log('CHour',{dt : ymdh},'삭제');
