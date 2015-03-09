@@ -93,6 +93,7 @@ cysBatch.CDay = function(ymd){
 
 
 /* 토요일만 실행됨 */
+/* db.TEST_R_WEEK.ensureIndex({region:1,y:1,w:1}); */
 cysBatch.Cweek = function(ymd){
     console.log( 'Cweek' );
     var mnt = moment(ymd,'YYYYMMDD');

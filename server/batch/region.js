@@ -36,13 +36,13 @@ cysBatch.goMonth = function(){
 
 cysBatch.goWeek = function(){
 
-    _.each(['2010','2011','2012','2013','2014','2015'],function(yy){
+    _.each(['2013','2014'],function(yy){
 
         _.each(utl.mm(),function(mm){
 
             _.each(utl.dd(mm),function(dd){
 
-                cysBatch.Rweek(yy+mm+dd);
+                cysBatch.Cweek(yy+mm+dd);
 
             });
 
