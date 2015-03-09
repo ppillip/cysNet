@@ -8,6 +8,7 @@ cysBatch.gogo = function(){
     //cysBatch.goMonth();
     cysBatch.goWeek();
     cysBatch.goDay();
+    cysBatch.goHour();
 };
 
 cysBatch.goYear = function(){
