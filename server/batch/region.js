@@ -205,12 +205,12 @@ cysBatch.Rweek = function(ymd){
     _.each( CommonCode.findOne({_id:"L02290300"}).cd , function(obj,idx){
 
         var matchCondition = {
-                        $and : [
-                            { WDATE : { $gt : start} },
-                            { WDATE : { $lt : end} }
-                        ],
-                        CNSL_RGN_CD : obj.cd
-                    };
+            $and : [
+                { WDATE : { $gt : start} },
+                { WDATE : { $lt : end} }
+            ],
+            CNSL_RGN_CD : obj.cd
+        };
 
         var dt = ymd.substr(0,4) + ('0'+ w ).substr(-2,2);
 
